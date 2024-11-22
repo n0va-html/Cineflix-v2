@@ -1,0 +1,313 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ca 2 Détails du film</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+            integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="stylesheet" href="/css/details.css">
+    <link rel="shortcut icon" href="/img/logo_cineflix.png" type="image/x-icon">
+</head>
+<body>
+
+
+
+<!-- ------------------------------------------------------NAVBAR------------------------------------------------------ -->
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3 fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img class="logo" src="/img/logo_cineflix.png" alt="Logo Cineflix" style="height: 40px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/index.html">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/html/liste.html">Liste des films</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="/html/genre.html" id="genreDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Genres de films
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="genreDropdown">
+                            <li> <a class="dropdown-item " href="/html/genre.html#acac">Action</a></li>
+                            <li><a class="dropdown-item " href="/html/genre.html#hor">Horreur</a></li>
+                            <li><a class="dropdown-item" href="/html/genre.html#sf">Science-Fiction</a></li>
+                            <li><a class="dropdown-item" href="/html/genre.html#coco">Comédie</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/html/nouveautes.html">Nouveautés</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<!-- ------------------------------------------------------BOUTON RETOUR--------------------------<button type="button" class="bouton"  class="btn btn-light">Light</button>---------------------------- -->
+
+
+
+
+
+
+
+
+
+
+<style>
+    .movie-poster {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+    }
+    .movie-title {
+        font-size: 2.5rem;
+        font-weight: bold;
+    }
+    .movie-info {
+        font-size: 1.2rem;
+        color: #ffffff;
+    }
+    .rating {
+        color: #e6235b;
+    }
+    .description {
+        margin-top: 20px;
+        font-size: 1.1rem;
+        color: #000000;
+    }
+</style>
+</head>
+<body>
+<div class="container mt-4">
+    <!-- Détails du film -->
+    <div class="row">
+        <div class="col-md-4">
+            <img src="img/AfficheCa.png" alt="Ca 2" class="movie-poster">
+        </div>
+        <div class="col-md-8">
+            <h1 class="movie-title">Ça 2</h1>
+            <p class="movie-info">
+                <strong>Année de sortie:</strong> 2019<br>
+                <strong>Genre:</strong> Action, Horreur, Fantastique<br>
+                <strong>Durée:</strong> 170 min<br>
+                <strong>Réalisateur:</strong> Gary Dauberman
+            </p>
+
+            <!-- Note du film -->
+            <div class="rating mb-3">
+                <strong>Note:</strong> <span class="fs-4"> <i class="bi bi-star-fill"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                      <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                    </svg></i> 8.5/10</span>
+            </div>
+
+            <!-- Description -->
+            <div class="description">
+                <strong>Résumé:</strong>
+                <p>27 ans après la victoire du Club des Ratés sur Grippe-Sou, le sinistre Clown est de retour pour semer la terreur dans les rues de Derry. Désormais adultes, les membres du Club ont tous quitté la petite ville pour faire leur vie. Cependant, lorsqu'on signale de nouvelles disparitions d'enfants, Mike, le seul du groupe à être demeuré sur place, demande aux autres de le rejoindre. Traumatisés par leur expérience du passé, ils doivent maîtriser leurs peurs les plus enfouies pour anéantir Grippe-Sou une bonne fois pour toutes. Mais il leur faudra d'abord affronter le Clown, devenu plus dangereux que jamais…</p>
+            </div>
+
+            <!-- Liste des acteurs -->
+            <div class="mt-4">
+                <h4>Acteurs principaux:</h4>
+                <ul>
+                    <li>Bill Skarsgård</li>
+                    <li>James McAvoy</li>
+                    <li>Jessica Chastain</li>
+                </ul>
+            </div>
+
+            <!-- Boutons d'actions -->
+            <div class="mt-4">
+                <button class="btn btn-primary"><a href="https://www.youtube.com/watch?v=G8fR1vvrLmI"></a>Regarder le Film</button>
+                <button class="btn btn-secondary">Ajouter aux favoris</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ------------------------------------------------------COLONNES RESPONSIVE------------------------------------------------------ -->
+<div>
+    <div>
+
+    </div>
+</div>
+
+
+<div data-aos="flip-down" >
+    <div class="container-fluid padding-top">
+        <div class="row justify-content-center">
+            <div class="col-8">
+                <div class="card mb-3">
+                    <img src="img/hello.gif" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Pennywise</h5>
+                        <p class="card-text">Pennywise, le clown dansant, est le personnage principal et terrifiant du roman It (Ça) de Stephen King. Il s’agit d’une entité cosmique maléfique qui adopte la forme d’un clown pour attirer et terroriser ses victimes, principalement des enfants. Pennywise est une entité ancestrale venue d’un autre plan d’existence. Il représente les peurs primitives et les traumatismes enfouis, symbolisant comment les adultes oublient souvent leurs peurs d’enfance, tandis que les enfants en sont encore victimes.
+
+                            En résumé, Pennywise est une figure cauchemardesque à la fois séduisante et monstrueuse, qui mélange l'innocence inquiétante du clown avec l'horreur cosmique insondable.</p>
+                        <p class="card-text"><small class="text-body-secondary">Last updated 5 years ago</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div data-aos="fade-down">
+    <div class="container-fluid padding-top">
+        <div class="row justify-content-center">
+            <div class="col-8">
+                <div class="card mb-3">
+                    <img src="img/unnamed.gif" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">l'Histoire du premier film</h5>
+                        <p class="card-text">Pennywise est une entité ancestrale venue d’un autre plan d’existence. Il représente les peurs primitives et les traumatismes enfouis, symbolisant comment les adultes oublient souvent leurs peurs d’enfance, tandis que les enfants en sont encore victimes.
+
+                            En résumé, Pennywise est une figure cauchemardesque à la fois séduisante et monstrueuse, qui mélange l'innocence inquiétante du clown avec l'horreur cosmique insondable. Le film juxtapose habilement l’innocence de l’enfance à la terreur. Les membres du Club des Ratés, chacun marqué par ses propres blessures émotionnelles (harcèlement, deuil, abus), représentent des facettes universelles de la vulnérabilité humaine. L’amitié qui les lie est à la fois leur plus grande force et leur moyen de surmonter leurs peurs.
+
+                            À travers ces personnages, Ça explore des thèmes profonds comme le passage à l’âge adulte, la perte d’innocence et l’impact durable des traumatismes. Pennywise, quant à lui, est la manifestation de ces peurs enfantines, mais aussi des angoisses que l’on emporte avec soi en grandissant.</p>
+                        <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!--- <div class="container-fluid">
+  <div class="row">
+      <div class="col-12 col-sm-6 col-md-4 col-lg-12">
+        <div class="container my-5">
+          <div class="row justify-content-center">->
+              <-- Carte 1 -->
+<!--<div class="col-md-4 mb-4">
+    <div class="card">
+        <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Image 1">
+        <div class="card-body">
+            <h5 class="card-title">Titre de la carte 1</h5>
+            <p class="card-text">Voici un exemple de texte pour la carte 1. Vous pouvez mettre ici une description ou des informations supplémentaires.</p>
+            <a href="#" class="btn btn-primary">Voir plus</a>
+        </div>
+    </div>
+</div>
+
+<div class="col-md-4 mb-4">
+  <div class="card">
+      <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Image 2">
+      <div class="card-body">
+          <h5 class="card-title">Titre de la carte 2</h5>
+          <p class="card-text">Voici un exemple de texte pour la carte 2. Détaillez ici le contenu pertinent pour cette carte.</p>
+          <a href="#" class="btn btn-primary">Voir plus</a>
+      </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+</div>
+</div>
+
+
+</div>
+</div>
+</div>
+
+<div class="container-fluid">
+<div class="row justify-content-left">
+<div class="col-4 col-sm-4 col-md-12 col-lg-12">
+<!-- Carte 2 -->
+<!--
+    </div>
+</div>
+</div>
+
+<div class="container-fluid">
+<div class="row">
+    <div class="col-4 col-sm-4 col-md-12 col-lg-4">
+     <--Carte 3-->
+<!--    <div class="col-md-4 mb-4">
+      <div class="card">
+          <img src="https://via.placeholder.com/300x200" class="card-img-top" alt="Image 3">
+          <div class="card-body">
+              <h5 class="card-title">Titre de la carte 3</h5>
+              <p class="card-text">Voici un exemple de texte pour la carte 3. Ajoutez une autre description ou un lien pertinent ici.</p>
+              <a href="#" class="btn btn-primary">Voir plus</a>
+          </div>
+      </div>
+  </div>
+  </div>
+</div>
+</div>
+
+
+
+<div class="container-fluid">
+<div class="row">
+  <div class="col-4 col-sm-4 col-md-12 col-lg-4">
+
+  </div>
+</div>
+</div> ->
+
+<--------------------------------------------------------Bouton Pop-Up-------------------------------------------------------->
+
+<!--<button type="button" class="btn btn-secondary"
+ data-bs-toggle</div>="popover" data-bs-placement="right"
+ data-bs-custom-class="custom-popover"
+ data-bs-title="Custom popover"
+ data-bs-content="This popover is themed via CSS variables.">
+  Custom popover
+ </button>-->
+
+
+
+<!-- Lien vers le JS de Bootstrap -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        // Ajoute un comportement tactile pour les sous-menus
+        var dropdowns = document.querySelectorAll(".dropdown-toggle");
+        dropdowns.forEach(function (dropdown) {
+            dropdown.addEventListener("click", function (e) {
+                if (window.innerWidth < 992) { // Seulement sur mobile
+                    e.preventDefault();
+                    var submenu = this.nextElementSibling;
+                    submenu.style.display = submenu.style.display === "block" ? "none" : "block";
+                }
+            });
+        });
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dune - Détails du Film</title>
+    <meta name="description" content="Découvrez Dune, un chef-d'œuvre de science-fiction réalisé par Denis Villeneuve. Infos sur le casting, le réalisateur, et bien plus.">
+    <meta name="keywords" content="Dune, science-fiction, Denis Villeneuve, Timothée Chalamet, Zendaya">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+            integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="stylesheet" href="/css/details.css">
+    <link rel="shortcut icon" href="/img/logo_cineflix.png" type="image/x-icon">
+    <style>
+        .movie-poster {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .movie-title {
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+        .movie-info {
+            font-size: 1.2rem;
+            color: #ffffff;
+        }
+        .rating {
+            color: #e6235b;
+        }
+        .description {
+            margin-top: 20px;
+            font-size: 1.1rem;
+            color: #000000;
+        }
+        .card-title {
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+        .card-text {
+            font-size: 1rem;
+        }
+    </style>
+</head>
+<body>
+
+<!-- ------------------------------------------------------NAVBAR------------------------------------------------------ -->
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3 fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img class="logo" src="/img/logo_cineflix.png" alt="Logo Cineflix" style="height: 40px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/index.html">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/html/liste.html">Liste des films</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="/html/genre.html" id="genreDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Genres de films
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="genreDropdown">
+                            <li> <a class="dropdown-item " href="/html/genre.html#acac">Action</a></li>
+                            <li><a class="dropdown-item " href="/html/genre.html#hor">Horreur</a></li>
+                            <li><a class="dropdown-item" href="/html/genre.html#sf">Science-Fiction</a></li>
+                            <li><a class="dropdown-item" href="/html/genre.html#coco">Comédie</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/html/nouveautes.html">Nouveautés</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<!-- ------------------------------------------------------Détails du Film------------------------------------------------------ -->
+<main>
+<div class="container mt-4" style="margin-top: 80px;">
+    <div class="row">
+        <div class="col-md-4">
+            <img src="/img/AfficheDune.jpg" alt="Dune" class="movie-poster">
+        </div>
+        <div class="col-md-8">
+            <h1 class="movie-title">Dune</h1>
+            <p class="movie-info">
+                <strong>Année de sortie:</strong> 2021<br>
+                <strong>Genre:</strong> Science-fiction, Aventure<br>
+                <strong>Durée:</strong> 2h35<br>
+                <strong>Réalisateur:</strong> Denis Villeneuve
+            </p>
+            <div class="rating mb-3">
+                <strong>Note:</strong> <span class="fs-4">8.1/10</span>
+            </div>
+            <div class="description">
+                <strong>Résumé:</strong>
+                <p>Dans un futur lointain, Paul Atreides, héritier de la maison noble des Atreides, doit protéger la planète désertique Arrakis, la seule source de l'épice la plus précieuse de l'univers. Une lutte pour la survie s'engage entre les factions pour le contrôle de cette ressource vitale.</p>
+            </div>
+            <div class="mt-4">
+                <h4>Acteurs principaux:</h4>
+                <ul>
+                    <li>Timothée Chalamet (Paul Atreides)</li>
+                    <li>Zendaya (Chani)</li>
+                    <li>Oscar Isaac (Duke Leto Atreides)</li>
+                </ul>
+            </div>
+            <div class="mt-4">
+                <button class="btn btn-primary">
+                    <a href="https://www.youtube.com/watch?v=n9xhJrPXop4" target="_blank" style="color: white; text-decoration: none;">Regarder la Bande-annonce</a>
+                </button>
+                <button class="btn btn-secondary">Ajouter aux favoris</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ------------------------------------------------------Cards------------------------------------------------------ -->
+<div data-aos="flip-down">
+    <div class="container-fluid padding-top">
+        <div class="row justify-content-center">
+            <div class="col-8">
+                <div class="card mb-3">
+                    <img src="/img/Dune-2-Paul-Atreides.webp" class="card-img-top" alt="Paul Atreides">
+                    <div class="card-body">
+                        <h5 class="card-title">Paul Atreides</h5>
+                        <p class="card-text">Paul Atreides, incarné par Timothée Chalamet, est un jeune noble qui doit faire face à des défis monumentaux pour protéger son peuple et le destin de l'univers.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</main>
+<footer class="bg-dark text-white py-4">
+    <div class="container footer">
+        <div class="row">
+            <div class="col-sm-6 col-md-3 mb-3">
+                <h5>Pages principales</h5>
+                <ul class="list-unstyled">
+                    <li>
+                        <a href="/index.html" class="footer-link">Accueil</a>
+                    </li>
+                    <li>
+                        <a href="/html/liste.html" class="footer-link">Liste des films</a>
+                    </li>
+                    <li>
+                        <a href="/html/genre.html" class="footer-link">Genres</a>
+                    </li>
+                    <li>
+                        <a href="/html/nouveautes.html" class="footer-link">Nouveautés</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-sm-6 col-md-3 mb-3">
+                <h5>Suivez-nous</h5>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/?locale=fr_FR" class="footer-social"
+                    ><i class="fab fa-facebook-f"></i
+                    ></a>
+                    <a href="https://www.youtube.com" class="footer-social"
+                    ><i class="fa-brands fa-youtube"></i
+                    ></a>
+
+                    <a href="https://www.instagram.com" class="footer-social"
+                    ><i class="fab fa-instagram"></i
+                    ></a>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-3 mb-3">
+                <h5>Contact</h5>
+                <ul class="list-unstyled contact-page">
+                    <li>
+                        <a href="mailto:contact@cineflix.fr"
+                        ><i class="fas fa-envelope"></i> contact@cineflix.fr</a
+                        >
+                    </li>
+                    <li>
+                        <a href="tel:+33763648273"
+                        ><i class="fas fa-phone"></i> +33 7 63 64 82 73</a
+                        >
+                    </li>
+                    <li>
+                        <i class="fas fa-map-marker-alt"></i> 10, Rue du Général
+                        Sarrail,<br />
+                        76000 Rouen
+                    </li>
+                </ul>
+            </div>
+            <div class="col-sm-6 col-md-3 mb-3">
+                <h5>Légalité</h5>
+                <ul class="list-unstyled">
+                    <li>
+                        <a href="/html/mentionlegales.html" class="footer-link">Mentions légales</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="text-center mt-4">
+            <p>&copy; 2024 CinéFlix. Tous droits réservés.</p>
+        </div>
+    </div>
+</footer>
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+</body>
+</html>
