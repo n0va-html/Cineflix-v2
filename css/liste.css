@@ -1,0 +1,19 @@
+.cartes{
+    background-color: #454545;
+    border-radius: 0 0 10px 10px;
+    color: #ffffff;
+}
+.films{
+    background-color: black;
+    padding-top: 3%;
+}
+.margin-top{
+    padding-top: 5%;
+}
+.openliste{
+    background-color: black;
+    padding: 8% 0 0 0;
+}
+.blanc{
+    color: white;
+}
