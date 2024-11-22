@@ -1,0 +1,8 @@
+User-agent: *
+
+Disallow: /error404.html
+Disallow: /mentions-legales.html
+
+Allow: /
+
+Sitemap: https://cineflix.fr/sitemap.xml

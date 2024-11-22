@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!-- Page d'accueil -->
+<url>
+    <loc>index.html</loc>
+    <priority> 1.0</priority>
+    <changefreq>daily</changefreq>
+</url>
+
+        <!-- Page des x -->
+<url>
+<loc>x.html</loc>
+<priority> 0.8</priority>
+<changefreq>weekly</changefreq>
+</url>
+
+
+        <!-- Page Mentions Legales -->
+<url>
+<loc>mentions-legales.html</loc>
+<priority> 0.3</priority>
+<changefreq>weekly</changefreq>
+</url>
+        <!-- Page 404 -->
+<url>
+<loc>404.html</loc>
+<priority> 0.3</priority>
+<changefreq>weekly</changefreq>
+</url>
+

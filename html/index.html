@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta property="og:title" content="Cineflix" />
+    <meta
+      property="og:description"
+      content="Site présentant les dernières sorties de films, dont les films les plus en tendances, films d'action"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.cineflix.fr/" />
+    <meta property="og:image" content="images/favicon.png" />
+    <meta property="og:site_name" content="Cineflix" />
+    <meta property="og:locale" content="fr_FR" />
+    <meta
+      name="description"
+      content="Site présentant les dernières sorties de films, dont les films les plus en tendances"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Accueil Cinéflix</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/css/navbar.css">
+  </head>
+  <body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3 fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img class="logo" src="img/logo_cineflix.png" alt="Logo Cineflix" style="height: 40px;">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" href="/html/index.html">Accueil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/html/liste.html">Liste des films</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="/html/genre.html" id="genreDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Genres de films
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="genreDropdown">
+                <li> <a class="dropdown-item " href="/html/genre.html#acac">Action</a></li>
+                <li><a class="dropdown-item " href="/html/genre.html#hor">Horreur</a></li>
+                <li><a class="dropdown-item" href="/html/genre.html#sf">Science-Fiction</a></li>
+                <li><a class="dropdown-item" href="/html/genre.html#coco">Comédie</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/html/nouveautes.html">Nouveautés</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+    <main>
+      <div class="container-fluid margin-top">
+        <div class="row justify-content-center">
+          <h1>Notre séléction de films populaires</h1>
+          <div class="col-12 col-sm-6 col-md-4">
+            <div
+              id="carouselExampleAutoplaying"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="8000">
+                  <img
+                    src="img/AfficheAvengers.jpg"
+                    class="d-block w-100"
+                    alt="Film Avengers"
+                  />
+                </div>
+                <div class="carousel-item" data-bs-interval="8000">
+                  <img
+                    src="img/AfficheBabysitting.jpg"
+                    class="d-block w-100"
+                    alt="Film Babysitting"
+                  />
+                </div>
+                <div class="carousel-item" data-bs-interval="8000">
+                  <img
+                    src="img/AfficheCa.jpg"
+                    class="d-block w-100"
+                    alt="Film Ca"
+                  />
+                </div>
+                <div class="carousel-item" data-bs-interval="8000">
+                  <img
+                    src="img/AfficheDune.jpg"
+                    class="d-block w-100"
+                    alt="Film Dune"
+                  />
+                </div>
+                <div class="carousel-item" data-bs-interval="8000">
+                  <img
+                    src="img/AfficheEMMP.jpg"
+                    class="d-block w-100"
+                    alt="Film epouse moi mon pote"
+                  />
+                </div>
+                <div class="carousel-item" data-bs-interval="8000">
+                  <img
+                    src="img/AfficheGladiator.jpg"
+                    class="d-block w-100"
+                    alt="Film Gladiator"
+                  />
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid">
+        <div class="row justify-content-center text-center m-5 row-gap-3">
+          <h2 data-aos="zoom-in">Les tendances actuelles</h2>
+          <div class="col-12 col-sm-6 col-md-3" data-aos="zoom-in">
+            <div class="card" style="width: 100%">
+              <img
+                src="img/AfficheIELB.jpg"
+                class="card-img-top"
+                alt="Film Ici et Là-bas"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Ici et Là-bas</h5>
+                <p class="card-text">
+                  Ici et Là-bas suit Pedro, un père qui revient au Mexique après
+                  des années aux États-Unis. Il tente de se reconnecter avec sa
+                  famille et de réaliser ses projets, mais les défis restent
+                  nombreux.
+                </p>
+                <a href="/html/IELB.html" class="btn btn-primary btn-danger">Aller au film</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-3" data-aos="zoom-in">
+            <div class="card" style="width: 100%">
+              <img
+                src="img/AfficheMatrix.jpg"
+                class="card-img-top"
+                alt="Film Matrix"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Matrix</h5>
+                <p class="card-text">
+                  Matrix suit Neo, un hacker qui découvre que son monde est une
+                  simulation contrôlée par des machines. Guidé par Morpheus, il
+                  rejoint la rébellion pour libérer l’humanité.
+                </p>
+                <a href="/html/matrix.html" class="btn btn-primary btn-danger">Aller au film</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-3" data-aos="zoom-in">
+            <div class="card" style="width: 100%">
+              <img
+                src="img/AfficheSmile.jpg"
+                class="card-img-top"
+                alt="Film Smile"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Smile</h5>
+                <p class="card-text">
+                  Smile suit Rose, une thérapeute hantée par des visions
+                  terrifiantes après un incident traumatique. Elle doit
+                  affronter son passé pour briser une malédiction mortelle.
+                </p>
+                <a href="/html/smile.html" class="btn btn-primary btn-danger">Aller au film</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-3" data-aos="zoom-in">
+            <div class="card" style="width: 100%">
+              <img
+                src="img/AfficheSSM.jpg"
+                class="card-img-top"
+                alt="Film Seul sur Mars"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Seul sur Mars</h5>
+                <p class="card-text">
+                  Seul sur Mars raconte l’histoire de Mark Watney, un astronaute
+                  laissé pour mort sur Mars. Ingénieux, il lutte pour survivre
+                  en attendant un possible sauvetage.
+                </p>
+                <a href="/html/mars.html" class="btn btn-primary btn-danger">Aller au film</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-3" data-aos="zoom-in">
+            <div class="card" style="width: 100%">
+              <img
+                src="img/AfficheTDK.jpg"
+                class="card-img-top"
+                alt="Film The Dark Knight"
+              />
+              <div class="card-body">
+                <h5 class="card-title">The Dark Knight</h5>
+                <p class="card-text">
+                  The Dark Knight suit Batman face au Joker, un criminel
+                  imprévisible semant le chaos à Gotham. Batman doit repousser
+                  ses limites pour protéger la ville.
+                </p>
+                <a href="/html/TDK.html" class="btn btn-primary btn-danger">Aller au film</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-3" data-aos="zoom-in">
+            <div class="card" style="width: 100%">
+              <img
+                src="img/AfficheTerrifier.jpg"
+                class="card-img-top"
+                alt="Film Terrifier"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Terrifier 3</h5>
+                <p class="card-text">
+                  Terrifier 3 met en scène Art le Clown qui revient semer le
+                  chaos à Noël, confrontant Sienna et Jonathan dans un
+                  déchaînement de violence glaçante et inventive.
+                </p>
+                <a href="/html/terrifier.html" class="btn btn-primary btn-danger">Aller au film</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-3" data-aos="zoom-in">
+            <div class="card" style="width: 100%">
+              <img
+                src="img/AfficheUPTEP.jpg"
+                class="card-img-top"
+                alt="Film un petit truc en plus"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Un p'tit truc en plus</h5>
+                <p class="card-text">
+                  Un p'tit truc en plus suit un père et son fils qui se cachent
+                  dans un camp pour jeunes adultes en situation de handicap, où
+                  leur imposture leur apporte une expérience humaine
+                  inoubliable.
+                </p>
+                <a href="/html/en_plus.html" class="btn btn-primary btn-danger">Aller au film</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-3" data-aos="zoom-in">
+            <div class="card" style="width: 100%">
+              <img
+                src="img/AfficheAvengers.jpg"
+                class="card-img-top"
+                alt="Film Avengers"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Infinity War</h5>
+                <p class="card-text">
+                  Infinity War réunit les Avengers pour stopper Thanos, qui veut
+                  collecter les pierres d'infinité et anéantir la moitié de
+                  l'univers.
+                </p>
+                <a href="/html/avengers.html" class="btn btn-primary btn-danger">Aller au film</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="bg-dark text-white py-4">
+      <div class="container footer">
+        <div class="row">
+          <div class="col-sm-6 col-md-3 mb-3">
+            <h5>Pages principales</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="/html/index.html" class="footer-link">Accueil</a>
+              </li>
+              <li>
+                <a href="/html/liste.html" class="footer-link">Liste des films</a>
+              </li>
+              <li>
+                <a href="/html/genre.html" class="footer-link">Genres</a>
+              </li>
+              <li>
+                <a href="/html/nouveautes.html" class="footer-link">Nouveautés</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-sm-6 col-md-3 mb-3">
+            <h5>Suivez-nous</h5>
+            <div class="social-icons">
+              <a href="https://www.facebook.com/?locale=fr_FR" class="footer-social"
+              ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="https://www.youtube.com" class="footer-social"
+              ><i class="fa-brands fa-youtube"></i
+              ></a>
+
+              <a href="https://www.instagram.com" class="footer-social"
+              ><i class="fab fa-instagram"></i
+              ></a>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-3 mb-3">
+            <h5>Contact</h5>
+            <ul class="list-unstyled contact-page">
+              <li>
+                <a href="mailto:contact@cineflix.fr"
+                ><i class="fas fa-envelope"></i> contact@cineflix.fr</a
+                >
+              </li>
+              <li>
+                <a href="tel:+33763648273"
+                ><i class="fas fa-phone"></i> +33 7 63 64 82 73</a
+                >
+              </li>
+              <li>
+                <i class="fas fa-map-marker-alt"></i> 10, Rue du Général
+                Sarrail,<br />
+                76000 Rouen
+              </li>
+            </ul>
+          </div>
+          <div class="col-sm-6 col-md-3 mb-3">
+            <h5>Légalité</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="/html/mentionlegales.html" class="footer-link">Mentions légales</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="text-center mt-4">
+          <p>&copy; 2024 CinéFlix. Tous droits réservés.</p>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      $(document).ready(function () {
+        AOS.init();
+      });
+    </script>
+  </body>
+</html>
